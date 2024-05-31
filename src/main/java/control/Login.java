@@ -101,7 +101,7 @@ public class Login extends HttpServlet {
 	private String checkPsw(String psw) {
 		MessageDigest md = null;
 		try {
-			md = MessageDigest.getInstance("MD5");
+			md = MessageDigest.getInstance("SHA-256");
 		}
 		catch (Exception e) {
 			e.printStackTrace();
